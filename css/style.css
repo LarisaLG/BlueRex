@@ -27,9 +27,11 @@ h4{
     background: url(../img/bg-main.jpg) center no-repeat;
     background-size: cover;
     height: 100vh;
-    min-height: 600px;
+    min-height: 700px;
     position: relative;
-    
+}
+.navbar-toggler{
+    color: #ffffff;
 }
 .main-header .navbar-brand, 
 .main-header ul li a{
@@ -44,7 +46,7 @@ h4{
    font-size: 20px;
 }
 
-.main-header ul li a::after {
+.main-header ul li a:after {
     content: '';
     display: block;
     width: 100%;
@@ -53,13 +55,13 @@ h4{
     transform: scale(0);
     transition: all .3s;
  }
-.main-header ul li a:hover::after {
+.main-header ul li a:hover:after {
     transform: scale(1);
  }
 .main-header-text{
     position: absolute;
     top: 25%;
-    left: 25%;
+    left: 5%;
     max-width: 600px;
     color: #ffffff;
     padding: 20px;
@@ -92,4 +94,60 @@ h4{
 }
 .btn-violet{
     background-color: #69328e;
+}
+
+
+
+/* Large Devices, Wide screens */
+@media only screen and (max-width : 1200px) {
+
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .main-header-text{
+        background-color: rgba(0,0,0,.2);
+    }
+}
+@media only screen and (max-width : 991px) {
+    .navbar-nav{
+        background: linear-gradient(45deg, #ed1b33 0%, #442e82 100%);
+        position: relative;
+        z-index: 1;
+        padding: 0 15px;
+    }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .main-header-text{
+        left: 0;
+        margin: 0 20px;
+        max-width: 100%;
+    }
+    h3,h4 {
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width : 600px) {
+    .main-header-text{
+        top: 90px;
+    }
+    .main-header-buttons .btn{
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .main-header-buttons .btn:last-child{
+        margin-top: 0;
+    }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    
+}
+
+@media only screen and (max-width : 380px) {
+    .main-header .navbar-brand{
+        font-size: 30px;
+
+    }
 }
