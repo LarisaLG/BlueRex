@@ -10,7 +10,7 @@ img{
 }
 
 section{
-    padding: 100px 0px;
+    padding: 50px 0px;
 }
 h3{
     font-style: italic;
@@ -111,17 +111,17 @@ h4{
 .section-watch h4{
     font-size: 50px;
 }
-.section-watch .nav-pills .nav-link{
+.section-tabs .nav-pills .nav-link{
     font-size: 13px;
     font-weight: 600;
     text-transform: uppercase;
     padding: 14px 30px;
     color: #484848;
 }
-.section-watch .nav-pills{
+.section-tabs .nav-pills{
     margin-bottom: 20px;
 }
-.section-watch .nav-pills .nav-item .nav-link.active{
+.section-tabs .nav-pills .nav-item .nav-link.active{
     background-color: #f42267;  
     color: #ffffff;
     box-shadow: 0 4px 16px rgba(0, 0, 0, .35);
@@ -171,6 +171,205 @@ h4{
     background-size: cover;
     color: #ffffff;
 }
+/* ********** section design *********** */
+.section-design h3,
+.section-design h4 {
+    color: #484848;
+}
+.section-design h3{
+    font-size: 33px;
+}
+/* rules for gradient icons */
+.section-design span i{
+    font-size: 60px;
+    background: linear-gradient(45deg, rgba(255, 0, 32, .7) 0%, rgba(68, 26, 130, 0.8) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: initial; 
+    padding-left: 15px;
+}
+.section-design h2{
+    font-size: 25px;
+    font-weight: 600;
+    color: #484848;
+    margin: 10px 0;
+}
+.section-design p{
+    font-size: 18px;
+}
+.embed-responsive{
+    position: relative;
+    border-radius: 10px;
+}
+#videoPlayBtn{
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    background: url(../img/play.png) center no-repeat;
+}
+/* ********** section work *********** */
+.section-work{
+    background-color: #f1f1f1;
+    color: #333333;
+    font-size: 15px;
+}
+.section-work .nav-pills{
+    margin: 30px 0;
+}
+.gallery-item{
+    margin-bottom: 20px;
+}
+.gallery a img{
+    transition: all 0.8;
+}
+.gallery a:hover img{
+    box-shadow: 0 14px 30px -15px rgba(0, 0, 0, .75);
+}
+
+/* ********** section company *********** */
+.section-company{
+    background-color: #4b2d7f;
+    color: #ffffff;
+    font-size: 15px;
+}
+/* ********** section-clients *********** */
+.section-clients{
+    background: url(../img/reviews_bg.jpg) center no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+.section-clients .carousel-caption{
+    top: 5%;
+    bottom: auto;
+    text-align: left;
+}
+.section-clients .blockquote{
+    font-style: italic;
+    font-weight: 500;
+    font-size: 22px;
+    position: relative;
+    padding-left: 40px;
+    margin-top: 70px;
+}
+.section-clients .blockquote::before{
+    content: '\201C';
+    float: left;
+    font-size: 150px;
+    font-weight: 500;
+    font-style: italic;
+    color: #f42267;
+    position: absolute;
+    top: -80px;
+    left: -33px;
+}
+.section-clients .blockquote .blockquote-footer{
+    margin-top: 50px;
+}
+
+/* ********** section-contact *********** */
+.section-contact{
+    background: url(../img/form_bg.jpg) center no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+.section-contact h5{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.section-contact form{
+    margin-top: 50px;
+}
+.section-contact .btn-violet{
+    background-color: #4b2d7f;
+}
+.btn-violet .btn-shadow{
+    box-shadow: 0px 7px 0px #a57ee9;
+}
+.btn-violet .btn-shadow:hover{
+    background-color: #3a2362;
+    box-shadow: 0px 5px 0px #a57ee9;
+}
+.section-contact .form-control{
+    height: 51px;
+    background-color: rgba(255, 255, 255, .35);
+    color: #ffffff;
+    border: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 20px;
+}
+.section-contact .form-control:focus{
+    outline:none;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, .25);
+}
+.section-contact .form-control::placeholder{
+    color: #ffffff;
+}
+/* ********** section social *********** */
+.section-social{
+    background-color: #4b2d7f;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+}
+.section-social span{
+    color: #ad8de4;;
+}
+/* ********** footer *********** */
+.footer{
+    background: url(..img/world-map.png) center no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    font-family: 'Poppins', sans-serif;
+}
+.footer h5{
+    font-size: 25px;
+    color: #4b2d7f;   
+    font-weight: 700;
+}
+.footer ul{
+    list-style: none;
+    padding-left: 10px;
+}
+.footer ul li a{
+    font-size: 15px;font-weight: 600;
+    color: #171717;
+}
+.footer-img img{
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+.copyright{
+    background-color: #f6f6f6;
+    padding: 50px 0;
+    font-family: 'Poppins', sans-serif;
+}
+.copyright a,
+.copyright span{
+    color: #171717;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+}
+.copyright a:hover{
+    text-decoration: underline;
+}
+.copyright a::after,
+.copyright span::after{
+    content: '\00B7';
+    right: -3px;
+    position: absolute;
+}
+.copyright li:last-child a::after,
+.copyright li:last-child span::after{
+    content: "";
+}
+
 
 
 
@@ -187,8 +386,25 @@ h4{
     .main-header-text{
         background-color: rgba(0,0,0,.2);
     }
-    .section {
+    .section, 
+    .footer {
         padding: 50px 0;
+    }
+    .copyright{
+        padding: 25px 0;
+    }
+    .section-clients h3,
+    .section-clients h4{
+        font-size: 25px;
+    }
+    .section-clients .blockquote{
+        font-size: 17px;
+        padding-left: 20px;
+        margin-top: 40px;
+    }
+    .section-clients .blockquote::before{
+        font-size: 100px;
+        top: -40px;
     }
 }
 @media only screen and (max-width : 991px) {
@@ -232,12 +448,21 @@ h4{
         padding: 10px 15px;
     }
 }
+@media only screen and (max-width : 576px) {
+    .section-clients .carousel-caption{
+        position: static;
+        width: 70%;
+        margin: auto;
+    }
+}
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-    .section-watch .nav-pills .nav-link {
+    .section-tabs .nav-pills .nav-link {
         padding: 8px 16px;
+        text-align: center;
     }
-    .section-watch .nav-pills .nav-item {
+    .section-tabs .nav-pills .nav-item {
         width: 100%;
     }
 }
