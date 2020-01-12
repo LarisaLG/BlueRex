@@ -344,7 +344,7 @@ h4{
 }
 /* ********** footer *********** */
 .footer{
-    background: url(..img/world-map.png) center no-repeat;
+    background: url(../img/world-map.png) center no-repeat;
     background-size: cover;
     padding: 100px 0;
     font-family: 'Poppins', sans-serif;
@@ -393,6 +393,112 @@ h4{
 }
 
 
+/* ********** section-content (blog) *********** */
+.section-content{
+    padding: 40px 0;
+}
+.article-preview{
+    border: 1px solid #ccc;
+    padding: 20px;
+    transition: all .5s;
+    margin-bottom: 30px;
+}
+.article-preview:hover{
+    box-shadow: 0 14px 30px -15px rgba(0,0,0, .75);
+}
+.article-preview h2{
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+.article-preview a{
+    color: #484848;
+    transition: all .5s;
+}
+.article-preview a:hover{
+    color: #f42267;
+    text-decoration: none;
+}
+.article-date{
+    color: #da1757;
+    font-size: 13px;
+    font-weight: 600;
+}
+.thumb{
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    bottom: 0 20px 20px 0;
+    float: left;
+}
+.article-preview .more{
+    color: #da1757;
+    font-size: 18px;
+}
+.article-preview .more:hover{
+    text-decoration: underline;
+}
+.widget-categories ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.widget-categories ul li a{
+    padding-left: 10px;
+    font-size: 16px;
+    color: #2f2f2f;
+    margin-bottom: 10px;
+    display: inline-block;
+    transition: all .5s;
+}
+.widget-categories ul li::before{
+    content: '\f138';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #da1757;
+    font-size: 16px;
+}
+.widget-categories ul li a:hover{
+    color: #da1757;    
+}
+.widget-title{
+    color: #484848;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    position: relative;
+}
+.widget-title::after{
+    content: " ";
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 50px;
+    background-color: #da1757;
+}
+
+/* ********** pagination *********** */
+.page-link{
+    color: #da1757;
+    transition: all .5s;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.page-link:hover{
+    background-color: #da1757;
+    color: #ffffff;
+    border-color: #f42267;
+}
+.page-item.active .page-link{
+    background-color: #da1757;
+    border-color: #da1757;
+}
+
+
+
+
+
+
 
 
 
@@ -430,7 +536,7 @@ h4{
     }
 }
 @media only screen and (max-width : 991px) {
-    .navbar-nav{
+    .main-header .navbar-nav{
         background: linear-gradient(45deg, #ed1b33 0%, #442e82 100%);
         position: relative;
         z-index: 1;
@@ -485,6 +591,10 @@ h4{
         text-align: center;
     }
     .section-tabs .nav-pills .nav-item {
+        width: 100%;
+    }
+    .thumb{
+        float: none;
         width: 100%;
     }
 }
